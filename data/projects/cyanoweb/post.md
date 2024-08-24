@@ -1,0 +1,11 @@
+# Summary
+
+[Click here to go to the CyanoWeb platform.](https://visioterra.org/CyanoWeb/)
+
+Cyanobacteria are organisms obtaining energy via photosynthesis. These bacteria may be found in a lot of terrestrial and aquatic habitats, and are particularly known for their blue-green color. In water habitats, such as lakes, high concentrations of cyanobacteria can be harmful for humans. Fortunately, a high concentration of these bacteria results in a change of water color.
+
+The CyanoWeb platform uses Sentinel-2 data to track changes of color in monitored lakes. This service automatically processes the most recent Sentinel-2 acquisitions to estimate a concentration of cyanobacteria. Users registered as operators may send an alert when the concentration is deemed too high for swimming.
+
+# My contribution
+
+I developed both the front-end and back-end of this solution. This platform relies on a study of correlation between the color of lakes and the concentration of cyanobacteria, which has been performed by one of my colleagues. The back-end is made using Java J2EE servlets, and JavaMail for sending alerts of high cyanobacteria concentrations. The front-end is in pure HTML, CSS and Javascript.

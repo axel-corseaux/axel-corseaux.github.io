@@ -1,0 +1,18 @@
+# Summary
+
+[Click here to go to the DEM4S2 platform.](https://visioterra.org/DEM4S2/)
+
+Digital Elevation Models (DEMs) are 3D representations of the terrain or surface of the Earth. These models consist of elevations on a discrete grid, usually stored in standard or custom image formats. DEMs may represent a city, a region, a country or even the whole world.
+
+A typical application of DEM data concerns the orthorectification of satellite imagery such as Sentinel-2 products. The Sentinel-2 satellite does not acquire scenes vertically, but at a certain angle of inclination. Due to this angle, high features such as mountains and buildings may be badly located on the resulting acquistions. The orthorectification algorithm alleviates this issue by correcting the acquisitions using a Digital Elevation Model. The resulting image is closer to what could have been acquired vertically by the satellite (i.e. without any shift caused by the acquisition angle).
+
+The role of the DEM4S2 platform is to retrieve the DEM which has been used to perform the orthorectification of Sentinel-2 data. Users can enter any Sentinel-2 product identifier, for which the platform will produce a DEM superimposable with the given product.
+
+This platform has been presented during the DEMIX Workshop of the Geomorphometry 2023 conference.
+
+[Go to the Geomorphometry 2023 website.](https://geomorphometry.org/geomorphometry-2023/)
+
+# My contribution
+
+I developed the back-end of this solution (first version). The back-end is written in Java J2EE. All requests are handled by servlets. The front-end has been written by one of my colleagues in HTML, CSS and JavaScript. The 3D view of DEM tiles is handled by CesiumJS, a high performance maps and 3D globe viewer.
+

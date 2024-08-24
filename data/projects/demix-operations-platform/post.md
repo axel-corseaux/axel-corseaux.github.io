@@ -1,0 +1,15 @@
+# Summary
+
+[Click here to go to the DEMIX Operations Platform.](https://visioterra.org/DemixOperationsPlatform/)
+
+Digital Elevation Models (DEMs) are 3D representations of the terrain or surface of the Earth. These models consist of elevations on a discrete grid, usually stored in standard or custom image formats. DEMs may represent a city, a region, a country or even the whole world. Nowadays, a wide variety of DEMs are free to download and use. As a consequence, researchers may have to find the best DEM to carry out their studies. Unfortunately, the size of these models is usually high, ranging from tens of gigabytes up to more than one terabyte. Moreover, complex transformations are often required to compare two DEMs, as these models rarely share the same characteristics.
+
+The DEMIX Operations Platform is an online tool developed to answer these issues, allowing the processing of global, national and regional DEMs easily. By clicking on the 3D globe, users may select 10km per 10km areas of interest called DEMIX tiles. Then, the interface may be used to select and export DEMs as GeoTIFF files, which are easily read by common Geographic Information Systems (GIS). This platform has been developed in the framework of the DEM Intercomparison eXercise (DEMIX), which aims to harmonise the terminology and methods used for the comparison of DEMs.
+
+This platform has been presented during the DEMIX Workshop of the Geomorphometry 2023 conference.
+
+[Go to the Geomorphometry 2023 website.](https://geomorphometry.org/geomorphometry-2023/)
+
+# My contribution
+
+I developed the back-end and most of the front-end of this solution (except widgets styling), up to version 1.1. The back-end is written in Java J2EE. All requests are handled by servlets. Full output DEM images are not created directly on the server side: chunks of 256 per 256 pixels are processed and streamed to the front-end, ensuring a low memory consumption. The front-end is written in pure HTML, CSS and JavaScript. The 3D view is handled by CesiumJS, a high performance maps and 3D globe viewer.
